@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 
 import 'package:inshortclone/constants.dart';
 
+import '../../main/main_screen.dart';
+
 class SignInForm extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
 
@@ -24,7 +26,7 @@ class SignInForm extends StatelessWidget {
             ),
             keyboardType: TextInputType.emailAddress,
             onSaved: (newValue) {},
-            decoration: InputDecoration(labelText: "Email*"),
+            decoration: const InputDecoration(labelText: "Email*"),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: defaultPadding),
@@ -32,14 +34,14 @@ class SignInForm extends StatelessWidget {
               validator: passwordValidator,
               obscureText: true,
               onSaved: (newValue) {},
-              decoration: InputDecoration(labelText: "Password*"),
+              decoration: const InputDecoration(labelText: "Password*"),
             ),
           ),
           TextButton(
             onPressed: () {},
-            child: Text("Forgot your Password?"),
+            child: const Text("Forgot your Password?"),
           ),
-          SizedBox(height: defaultPadding),
+          const SizedBox(height: defaultPadding),
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
@@ -54,7 +56,7 @@ class SignInForm extends StatelessWidget {
                   );
                 }
               },
-              child: Text("Sign In"),
+              child: const Text("Sign In"),
             ),
           ),
         ],
