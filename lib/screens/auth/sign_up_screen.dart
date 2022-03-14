@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:inshortclone/constant.dart';
+import 'package:inshortclone/constants.dart';
 
 import 'components/sign_up_form.dart';
 import 'sign_in_screen.dart';
 
 class SignUpScreen extends StatelessWidget {
+  const SignUpScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: EdgeInsets.all(defaultPadding),
+          padding: const EdgeInsets.all(defaultPadding),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -23,19 +25,19 @@ class SignUpScreen extends StatelessWidget {
               ),
               Row(
                 children: [
-                  Text("Already have an account?"),
+                  const Text("Already have an account?"),
                   TextButton(
                     onPressed: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => SignInScreen(),
+                        builder: (context) => const SignInScreen(),
                       ),
                     ),
-                    child: Text("Sign In!"),
+                    child: const Text("Sign In!"),
                   )
                 ],
               ),
-              SizedBox(height: defaultPadding * 1.5),
+              const SizedBox(height: defaultPadding * 1.5),
               SignUpForm(),
             ],
           ),

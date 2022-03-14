@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class SplashScreen extends StatelessWidget {
+  const SplashScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,20 +21,20 @@ class SplashScreen extends StatelessWidget {
               padding: const EdgeInsets.all(defaultPadding),
               child: Column(
                 children: [
-                  Spacer(),
+                  const Spacer(),
                   SvgPicture.asset("assets/icons/gerda_logo.svg"),
-                  Spacer(),
+                  const Spacer(),
                   ElevatedButton(
                     onPressed: () => Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => SignUpScreen(),
+                          builder: (context) => const SignUpScreen(),
                         )),
                     style: TextButton.styleFrom(
-                      minimumSize: Size(double.infinity, 0),
-                      backgroundColor: Color(0xFF6CD8D1),
+                      minimumSize: const Size(double.infinity, 0),
+                      backgroundColor: const Color(0xFF6CD8D1),
                     ),
-                    child: Text("Sign Up"),
+                    child: const Text("Sign Up"),
                   ),
                   Padding(
                     padding:
@@ -41,20 +43,20 @@ class SplashScreen extends StatelessWidget {
                       onPressed: () => Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => SignInScreen(),
+                          builder: (context) => const SignInScreen(),
                         ),
                       ),
                       style: TextButton.styleFrom(
                         elevation: 0,
-                        shape: RoundedRectangleBorder(
+                        shape: const RoundedRectangleBorder(
                           side: BorderSide(
                             color: Color(0xFF6CD8D1),
                           ),
                         ),
-                        minimumSize: Size(double.infinity, 0),
+                        minimumSize: const Size(double.infinity, 0),
                         backgroundColor: Colors.transparent,
                       ),
-                      child: Text("Sign In"),
+                      child: const Text("Sign In"),
                     ),
                   ),
                 ],

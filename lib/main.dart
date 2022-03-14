@@ -3,10 +3,12 @@ import 'package:inshortclone/screens/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -20,9 +22,9 @@ class MyApp extends StatelessWidget {
         textTheme: Theme.of(context).textTheme.apply(displayColor: textColor),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: TextButton.styleFrom(
-            padding: EdgeInsets.all(defaultPadding),
+            padding: const EdgeInsets.all(defaultPadding),
             backgroundColor: primaryColor,
-            minimumSize: Size(double.infinity, 10),
+            minimumSize: const Size(double.infinity, 10),
           ),
         ),
         inputDecorationTheme: InputDecorationTheme(
@@ -45,11 +47,18 @@ class MyApp extends StatelessWidget {
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.white,
           elevation: 0,
-          iconTheme: IconThemeData(color: textColor),
-          textTheme: Theme.of(context).textTheme.apply(displayColor: textColor),
+          iconTheme: const IconThemeData(color: textColor),
+          toolbarTextStyle: Theme.of(context)
+              .textTheme
+              .apply(displayColor: textColor)
+              .bodyText2,
+          titleTextStyle: Theme.of(context)
+              .textTheme
+              .apply(displayColor: textColor)
+              .headline6,
         ),
       ),
-      home: SplashScreen(),
+      home: const SplashScreen(),
     );
   }
 }

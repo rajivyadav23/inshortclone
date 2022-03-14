@@ -5,12 +5,14 @@ import 'package:flutter/material.dart';
 import 'components/sign_in_form.dart';
 
 class SignInScreen extends StatelessWidget {
+  const SignInScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: EdgeInsets.all(defaultPadding),
+          padding: const EdgeInsets.all(defaultPadding),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -23,19 +25,19 @@ class SignInScreen extends StatelessWidget {
               ),
               Row(
                 children: [
-                  Text("Don’n have an account?"),
+                  const Text("Don’n have an account?"),
                   TextButton(
                     onPressed: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => SignUpScreen(),
+                        builder: (context) => const SignUpScreen(),
                       ),
                     ),
-                    child: Text("Sign up!"),
+                    child: const Text("Sign up!"),
                   )
                 ],
               ),
-              SizedBox(height: defaultPadding * 1.5),
+              const SizedBox(height: defaultPadding * 1.5),
               SignInForm(),
             ],
           ),
