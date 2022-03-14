@@ -1,9 +1,12 @@
+// ignore_for_file: file_names
+
 class Category {
   final String icon, title;
 
   const Category({required this.icon, required this.title});
 }
 
+// ignore: constant_identifier_names
 const List<Category> demo_categories = [
   Category(icon: "#", title: "All"),
   Category(icon: "#", title: "National"),

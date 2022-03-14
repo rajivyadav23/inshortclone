@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
               ),
               RecommendedShorts(),
               Categories(),
-              LatestArticles()
+              LatestShorts()
             ],
           ),
         ),
