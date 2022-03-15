@@ -18,7 +18,7 @@ class _MainScreenState extends State<MainScreen> {
   final List<Widget> _pages = [
     HomePage(),
     const Categories(),
-    MyBookmarksScreen(),
+    HomePage(),
     const ProfileScreen(),
   ];
   int _selectedPage = 0;
