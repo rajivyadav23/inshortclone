@@ -1,6 +1,5 @@
 import 'package:inshortclone/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 
 import 'components/setting_item_caed.dart';
 
@@ -11,13 +10,13 @@ class SettingsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Settings"),
+        title: const Text("Settings"),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(height: defaultPadding),
+              const SizedBox(height: defaultPadding),
               SettingTab(
                 text: "Notifications",
                 iconSrc: "assets/icons/Notificatio_box.svg",
