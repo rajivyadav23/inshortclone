@@ -1,7 +1,6 @@
 import 'package:inshortclone/models/Category.dart';
-import 'package:inshortclone/models/News.dart';
-import 'package:inshortclone/models/NewsResponse.dart';
-import 'package:inshortclone/models/Source.dart';
+import 'package:inshortclone/models/news_screen.dart';
+import 'package:inshortclone/models/source.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:inshortclone/constants.dart';

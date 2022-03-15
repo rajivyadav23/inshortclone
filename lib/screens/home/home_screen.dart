@@ -2,6 +2,9 @@ import 'package:inshortclone/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
+import 'components/categories.dart';
+import 'components/custom_app_bar.dart';
+
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
