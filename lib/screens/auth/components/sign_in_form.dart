@@ -1,4 +1,5 @@
-import 'package:inshortclone/main/main_screen.dart';
+// ignore_for_file: unused_import, use_key_in_widget_constructors
+
 import 'package:inshortclone/screens/home/home_screen.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 import 'package:flutter/material.dart';

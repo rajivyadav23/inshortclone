@@ -1,4 +1,4 @@
-import 'package:inshort_clone/screens/search/search_screen.dart';
+import 'package:inshortclone/screens/search/search_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -34,7 +34,7 @@ class CustomAppBar extends StatelessWidget {
               ],
             ),
           ),
-          Spacer(),
+          const Spacer(),
           IconButton(
             onPressed: () => Navigator.push(
               context,

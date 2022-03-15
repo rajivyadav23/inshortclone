@@ -3,6 +3,10 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 
 import 'package:inshortclone/constants.dart';
 
+import '../home/components/categories.dart';
+import '../home/home_screen.dart';
+import '../profile/profile_screen.dart';
+
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
 
@@ -13,9 +17,9 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   final List<Widget> _pages = [
     HomePage(),
-    Caategories(),
-    MyAppointmentScreen(),
-    ProfileScreen(),
+    const Categories(),
+    MyBookmarksScreen(),
+    const ProfileScreen(),
   ];
   int _selectedPage = 0;
   @override
@@ -68,4 +72,7 @@ class _MainScreenState extends State<MainScreen> {
       ),
     );
   }
+
+  // ignore: non_constant_identifier_names
+  static MyBookmarksScreen() {}
 }

@@ -6,6 +6,8 @@ import 'package:inshortclone/constants.dart';
 class SignUpForm extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
 
+  SignUpForm({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     String _password = "";

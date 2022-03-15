@@ -1,6 +1,6 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:inshortclone/models/Category.dart';
-import 'package:inshortclone/models/news_screen.dart';
-import 'package:inshortclone/models/source.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:inshortclone/constants.dart';
@@ -36,6 +36,8 @@ class Categories extends StatelessWidget {
       ],
     );
   }
+
+  SectionTitle({required String title, Null Function()? pressOnSeeAll}) {}
 }
 
 class CategoryCard extends StatelessWidget {
@@ -56,23 +58,23 @@ class CategoryCard extends StatelessWidget {
         onTap: press,
         borderRadius: const BorderRadius.all(Radius.circular(10)),
         child: Container(
-          padding: EdgeInsets.all(defaultPadding / 2),
+          padding: const EdgeInsets.all(defaultPadding / 2),
           height: 90,
           width: 90,
-          decoration: BoxDecoration(
-            borderRadius: const BorderRadius.all(Radius.circular(10)),
+          decoration: const BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(10)),
             color: Colors.white,
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SvgPicture.asset(category.icon),
-              SizedBox(height: defaultPadding / 2),
+              const SizedBox(height: defaultPadding / 2),
               Text(
                 category.title,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 11,
                   fontWeight: FontWeight.w600,
                 ),

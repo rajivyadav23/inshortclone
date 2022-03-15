@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import, use_key_in_widget_constructors
+
 import 'package:inshortclone/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +10,7 @@ class SearchScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Search Here"),
+        title: const Text("Search Here"),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -30,8 +32,8 @@ class SearchScreen extends StatelessWidget {
                     .headline5!
                     .copyWith(fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: defaultPadding),
-              SearchForm(),
+              const SizedBox(height: defaultPadding),
+              SearchScreen(),
             ],
           ),
         ),

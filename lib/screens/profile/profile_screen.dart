@@ -1,6 +1,10 @@
+// ignore_for_file: unused_import
+
 import 'package:inshortclone/constants.dart';
 import 'package:inshortclone/settings/settings_screen.dart';
 import 'package:flutter/material.dart';
+
+import '../settings/settings_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({Key? key}) : super(key: key);
@@ -9,16 +13,16 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Profile"),
+        title: const Text("Profile"),
         actions: [
           IconButton(
             onPressed: () => Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => SettingsScreen(),
+                builder: (context) => const SettingsScreen(),
               ),
             ),
-            icon: Icon(
+            icon: const Icon(
               Icons.settings,
               color: primaryColor,
             ),
@@ -26,7 +30,7 @@ class ProfileScreen extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
-        padding: EdgeInsets.all(defaultPadding),
+        padding: const EdgeInsets.all(defaultPadding),
         child: Column(
           children: [
             ClipRRect(
@@ -38,7 +42,7 @@ class ProfileScreen extends StatelessWidget {
                 width: 120,
               ),
             ),
-            SizedBox(height: defaultPadding),
+            const SizedBox(height: defaultPadding),
             Form(
               child: Column(
                 children: [
