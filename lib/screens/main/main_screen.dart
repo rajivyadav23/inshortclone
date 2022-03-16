@@ -51,11 +51,11 @@ class _MainScreenState extends State<MainScreen> {
               ),
               GButton(
                 icon: Icons.people,
-                text: 'Doctors',
+                text: 'Discover',
               ),
               GButton(
                 icon: Icons.content_paste,
-                text: 'Appointment',
+                text: 'Bookmarks',
               ),
               GButton(
                 icon: Icons.person,
